@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> midia queries</title>
+    <style>
+        .con{
+            display: flex;
+            background-color: paleturquoise;
+            justify-content: space-around;
+        }
+        .item{
+            height: 100px;
+            width: 200px;
+            margin: 10px;
+            
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px black;
+        }
+        .bg-g{
+            background-color: green;
+        }
+        .bg-r{
+            background-color: red;
+        }
+        .bg-p{
+            background-color: purple;
+        }
+        .bg-b{
+            background-color: blue;
+        }
+
+        @media screen and (max-width:768px) {
+            .con{
+                flex-direction: column;
+                align-items: center;
+            }
+            .item{
+                width: 80%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="item bg-g"></div>
+        <div class="item bg-r"></div>
+        <div class="item bg-p"></div>
+        <div class="item bg-b"></div>
+
+    </div>
+</body>
+</html>
+
